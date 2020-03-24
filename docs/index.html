@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>Hoteles| Destinos de entretenimientos y descanso</title>
+</head>
+<body>
+    <nav>
+        <h1>
+            DESTINO DE ENTRETENIMIENTO Y DESCANSO 
+            <a href="#">
+                <img src="images/iconos/icono.png" alt="Destino de Entretenimiento y Descanso" title= "Destino de Entretenimiento y Descanso">
+            </a>
+        </h1>
+<!--Menú de navegacion principal-->
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#Habitaciones">HABITACIONES</a></li>
+            <li><a href="#Restaurante">CAFETERÍA</a></li>
+            <li><a href="#Casino">CASINO</a></li>
+            <li><a href="#Spa">SPA</a></li>
+            <li><a href="#Contacto">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <header>
+        <!--Acá va un slider-->
+        <div id= "slider">
+          <img src="images/slider-rellenos/slider.jpg" width= 600 alt="Destino de Entretenimiento y Descanso" title= "Destino de Entretenimiento y Descanso">
+          <!--<img src="" alt="">-->
+          <!--<img src="" alt="">-->
+          <!--<img src="" alt="">-->
+          <!--<img src="" alt="">-->
+        </div>
+        <br>
+        <br>
+        <form action="procesar-info.php" method="post">
+            <select name="destino">
+                <option value="destino-01">Potrerillos</option>
+                <option value="destino-02">San Rafael </option>
+                <option value="destino-03">Tupungato</option>
+            </select>
+            <input type="email" name="email" placeholder="e-mail" required>
+            <input type="date" name="check-in">
+            <input type="date" name="check-out">
+            <select name="habitaciones">
+                <option value="habitaciones01">Habitación Alta 1</option>
+                <option value="habitaciones02">Habitación Alta 2</option>
+                <option value="habitaciones03">Habitacion Media 1 </option>
+                <option value="habitaciones04">Habitacion Media 2 </option>
+                <option value="destino-01">Habitacion Económica 1</option>
+                <option value="destino-02">Habitacion Económica 2</option>
+            </select>
+            <select name="Adultos">
+                <option value="adultos01">1</option>
+                <option value="adultos02">2</option>
+                <option value="adultos03">3</option>
+                <option value="adultos04">4</option>  
+            </select>
+            <select name="Niños">
+                <option value="niños01">1</option>
+                <option value="niños02">2</option>
+                <option value="niños03">3</option>
+                <option value="niños04">4</option>
+                
+            </select>
+            <input type="submit" value="Reservar Ahora">
+
+        </form>
+
+    </header>
+    <br>
+    <br>
+
+    <main>
+        
+        <section id= "Habitaciones">
+            <h3 id= "habitacionesection">Habitaciones</h3>    
+        </section>
+        <!--Acá va un slider--> 
+            <div id= "slider01">
+                <img src="images/habitaciones-altas/habitacion-alta1.jpg" width= 200 alt="habitacionalta" title= "Habitación Alta">
+                <!--<img src="" alt="">-->
+                <!--<img src="" alt="">-->
+                <!--<img src="" alt="">-->
+                 <!--<img src="" alt="">-->
+            </div>
+        <p>Conocé nuestras habitaciones</p>
+        <input type="submit" value="Ver [+]">
+        <section id= "Restaurante">
+            <h3 id= "restaurantesection">Restaurante</h3>
+        </section>
+        <p>Degustá nuestros menús únicos y nuestros tragos especiales</p>
+        <input type="submit" value="Ver [+]">
+        <br>
+        <br>
+            <div id= "slider02">
+            <!--Acá va un slider-->
+                <img src="images/restaurante/tapa-restaurante.png" width= 200 alt="" title= "Restaurante">
+                <!--<img src="" alt="">-->
+                <!--<img src="" alt="">-->
+                <!--<img src="" alt="">-->
+                 <!--<img src="" alt="">-->
+            </div>
+        <br>
+        <br>
+        <section id= "Casino">
+            <h3 id= "casinosection">Casino</h3>
+        </section>
+            <div id= "slider03">
+            <!--Acá va un slider-->
+                <img src="images/casino/casino.png" width= 200 alt="" title= "Casino">
+                <!--<img src="" alt="">-->
+                <!--<img src="" alt="">-->
+                <!--<img src="" alt="">-->
+                 <!--<img src="" alt="">-->
+            </div>
+
+        <p>Pasá tu tiempo en nuestros lugares de recreación</p>
+        <input type="submit" value="Ver [+]">
+        <section id= "Spa">
+            <h3 id= "spasection">Spa</h3>
+        </section>
+        <p>Viví un momento único de relajacion, único de la mano de nuestros profesionales</p>
+        <input type="submit" value="Ver [+]">
+        <br>
+        <br>
+        <div id= "slider04">
+            <!--Acá va un slider-->
+                <img src="images/spa/spaa.jpg" width= 200 alt="" title= "Spa">
+                <!--<img src="" alt="">-->
+                <!--<img src="" alt="">-->
+                <!--<img src="" alt="">-->
+                 <!--<img src="" alt="">-->
+            </div>
+
+        <aside id= "Contacto">
+            <p>CONTACTO</p>
+            <a href="#">
+                <img src="images/iconos/icono2.jpg" width=200 alt="destino de entretenimiento y descanso" title= "Destino de Entretenimiento y Descanso">
+            </a>
+            <form action="enviar_email.php" method="post"> 
+                <label for="first_name">Nombre</label>
+                <input type="text" name="first_name" id="first_name">
+                <label for="last_name">Apellido</label>
+                <input type="text" name="last_name" id="last_name"> 
+                <label for="email">E-mail</label>
+                <input type="email" name="email" required id="email">
+                <label for="message">Mensaje</label>
+                <textarea name="message"></textarea> 
+                <input type="reset" value="Borrar"><input type="submit" value="Enviar" id="message">
+                </form>
+        </aside>
+
+    </main>
+    <br>
+    <br>
+
+    <footer>
+        <div>
+        <p>Destino de Entretenimiento y Descanso</p>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/iconos/facebook.jpg" width="50" alt="facebook" title="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/iconos/twitter.png" width="50" alt="Logotipo" title="Twitter"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/iconos/linkedin.png" width="50" alt="linkedin" title="Linkedin"></a>
+        </div>
+    </footer>
+</body>
+</html>
